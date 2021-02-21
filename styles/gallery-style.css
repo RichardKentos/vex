@@ -1,0 +1,137 @@
+body {
+    margin: 0%;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* GALLERY */
+
+
+.gallery-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display:none;
+  }
+
+
+.gallery-slider {
+    display: flex;
+    flex-direction: row;
+    width: 600vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+/* .months {
+	font-family: namefont;
+	font-size: 2.5em;
+	border-bottom: 2px solid #ff0053;
+} */
+
+.photos-div {
+    width: 600vw;
+    height: 100vh;
+	background-color: #002e50;
+    color: #F5EFED;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Months */
+.photos-div h2 {
+    margin: 2%;
+   font-size: 5rem;
+   color: #ff0053;
+   text-shadow: none;
+   font-family: namefont;
+   border-bottom: 3px solid #ff0053;
+}
+
+.photos-div p{
+   font-size: 1.3rem;
+   width: 100%;
+   padding: 2%;
+}
+
+ .team {
+  	background: url("../images/img1.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 850vw;
+    padding:0;
+	background-repeat: no-repeat;   
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+} 
+
+.img2 {
+    width: 200vw;
+	background: url("../images/img2.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+.img3 {
+	background: url("../images/img3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img4 {
+	background: url("../images/img4.jpg");
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+.img5 {
+	background: url("../images/img5.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+
+
+.photos-div .headings {
+	font-size: 6rem;
+	font-family: namefont;
+	letter-spacing: .6em;
+    align-self: flex-end;
+    position: relative;
+    left: -50%;
+    opacity: 30%;
+}
+
+.photos-div:nth-of-type(4) .headings{
+    position: relative;
+    left: 80%;
+}
+
+/* Dreams come true */
+.team h1 {
+    width: 100%;
+	font-family: namefont;
+	color: #ff0053;
+    text-align: center;
+    position: relative;
+	font-size: 5rem;
+	letter-spacing: .5rem;
+	padding: 30px 0px;
+	background-color: rgba(0, 46, 80, .7);
+}
