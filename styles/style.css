@@ -50,20 +50,6 @@ body {
 	transition: 0.3s;
 }
 
-#darkbtn {
-	border:none;
-	outline: none;
-	font-size: 1em;
-	width: 10em;
-	height: 2em;
-	background-color: #002e50;
-	color:#F5EFED; 
-	font-family: "namefont";
-	margin: 1em;
-	position: absolute;
-	left: 43%;
-	top: 0;
-}
 
 
 a {
