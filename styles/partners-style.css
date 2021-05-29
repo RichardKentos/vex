@@ -1,9 +1,16 @@
 
 /* PARTNERS */
 
+.partners-wrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
 .golden-partners {
     background-color: white;
-    padding: 5% 5%;
+    padding: 5%;
     width: 100%;
 	display: flex;
     flex-wrap: wrap;
@@ -45,11 +52,18 @@
 {
 .golden-partners img {
     width: 30%;
-    margin: 0 10%;
+    margin:10%;
 }
 
 .individuals {
     width: 100%;
+    margin: 0;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.individuals img {
+    box-shadow: 0px 5px 10px black;
 }
 
 }
