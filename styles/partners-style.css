@@ -40,3 +40,16 @@
     display: block;
     margin: auto;
 }
+
+@media only screen and (max-width: 600px)
+{
+.golden-partners img {
+    width: 30%;
+    margin: 0 10%;
+}
+
+.individuals {
+    width: 100%;
+}
+
+}

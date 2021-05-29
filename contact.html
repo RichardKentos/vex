@@ -21,10 +21,8 @@
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 	</head>
 <body>
-	<a href="index.html"><h1 class="team_name">crows</h1></a>
-	<!-- <a href="index.html"><img src="logo.jpg"></a> -->
 
-		<h1>CONTACT</h1>
+		<h1>Stay in touch</h1>
 
 		<i class="burger fa fa-bars"></i>
 		<menu>
@@ -39,53 +37,29 @@
 			</ul>
 		</menu>
 
-		<button type="button" id="lightbtn" onclick="light_mode()">Light Mode</button>
 		
-		<form name="contactform" method="post" action="mail.php">
-<table>
+<form name="contactform" method="post" action="mail.php">
 
-<!-- MENO -->	
-	<tr>
-	 <td valign="top">
-	  <label for="meno">Name / Business </label>
-	 </td>
-	 <td valign="top">
-	  <input class="emeno" type="text" name="name" maxlength="50" size="30">
-	 </td>
-	</tr>
+<div class="field">
+	<label for="Name">Name</label>
+	<input placeholder="John Doe" type="text">
+</div>
 
-	
 
-<!-- E-MAIL -->
-	<tr>
-	 <td valign="top">
-	  <label for="email">E-mail</label>
-	 </td>
-	 <td valign="top">
-	  <input id="email" class="emeno" type="text" name="email" maxlength="80" size="30">
-	 </td>
-	</tr>
+<div class="field">
+	<label for="E-mail">E-mail</label>
+	<input placeholder="johndoe@gmail.com" type="text">
+</div>
 
-	
+<div class="field">
+	<label for="Message">Message</label>
+	<textarea placeholder="I would like to..." type="text"></textarea>
+</div>
 
-<!-- KOMENT -->
-	<tr>
-	 <td valign="top">
-	  <label for="comments">Your message goes here</label>
-	 </td>
-	 <td  valign="top">
-	  <textarea  id="koment" name="message" maxlength="1000" cols="25" rows="6"></textarea>
-	 </td>
-	</tr>
 
-	
 
-<tr>
- <td colspan="2" style="text-align: center;">
-  <input id="tlac" type="submit" value="Odoslať">  
- </td>
-</tr>
-</table>
+
+
 </form>
 
 <footer>

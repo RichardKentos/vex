@@ -35,7 +35,7 @@ body {
 	transition: 0.4s;
 	width: 100%;
 	position: relative;
-	background-color: #002e50;
+	background-color: #003863;
 	color:rgb(230, 230, 230);
 	font-family: 'Overpass', sans-serif;
 	margin:0;
@@ -43,31 +43,10 @@ body {
 	height: 100%;
 }
 
-
-.dark {
-	background-color:#101820FF;
-	color: #FEE715FF;
-	transition: 0.3s;
-}
-
-
-
 a {
 	text-decoration: none;
 }
 
-.team_name {
-	width:20%;
-	position: relative; 
-	padding: 1%;
-	margin-bottom: 5%;
-	font-family: namefont;
-	color: #002e50;
-}
-
-.team_name a {
-	color: #002e50;
-}
 
 /* MENU */
 .burger {
@@ -77,7 +56,6 @@ a {
 	right: 5%;
 	color: #002e50;
 }
-
 
 .burger:hover{
 	cursor: pointer;
@@ -161,6 +139,8 @@ menu {
 .wrapper {
 	width: 100%;
 	height: 100vh;
+	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -168,11 +148,12 @@ menu {
 }
 
 .wrapper .intro {
-	position: fixed;
-    top: 0;
+	position: absolute;
+    top: -3%;
     right: 0;
     bottom: 0;
     left: 0;
+	margin: 0;
     overflow: hidden;
     z-index: -100;
 }
@@ -201,7 +182,7 @@ menu {
 
 /* INTRO TEXT */
 
-.wrapper .team {
+.wrapper .intro-text {
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -209,52 +190,53 @@ menu {
 	justify-content: center;
 }
 
-.wrapper .team h2 {
-	/* background-color: rgba(245, 239, 237, .2); */
+.wrapper .intro-text h2 {
+	outline: 10px solid white;
+
+	color: #002e50;
 	font-family: "Orbitron";
 	font-weight: bolder;
-	color: #002e50;
 	font-size: 5rem;
-	padding: 2% 0;
-	width: 100%;
+	padding: 2%;
+	width: fit-content;
 	text-align: center;
 }
 
 
-.wrapper .story {
+.wrapper .team {
 	background-color: #002e50;
 	padding: 2%;
 	width: 100%;
 	height: 80vh;
-	margin-bottom: 50vh;
+	margin: 40vh 0;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.wrapper .story h1 {
+.wrapper .team h2 {
 	width: 100%;
 	font: bolder 4rem "Orbitron";
 	text-align: center;
 	margin-bottom: 4rem;
 }
 
-.wrapper .story p {
+.wrapper .team p {
 	width: 50%;
 }
 
-.wrapper .story .person {
+.wrapper .team .person {
 	text-align: center;
 }
 
-.wrapper .story .person i {
+.wrapper .team .person i {
 	font-size: 8rem;
 	transition: .3s;
 	cursor:pointer;
 }
 
-.wrapper .story .person i:hover {
+.wrapper .team .person i:hover {
 	transform: scale(1.2);
 	transform: rotate(10deg);
 }
@@ -272,14 +254,13 @@ menu {
 	width: 100%;
 	position: relative;
 }
-.wrapper .instagram-section h1 {
+.wrapper .instagram-section h2 {
 	font-size: 5rem;
 	width: 100%;
 	padding: 0 2%;
 	font-family: namefont;
-	margin-top: -5rem;
+	margin-top: -3rem;
 	border-top-right-radius: 120px;
-	background-color: #002e50;
 	color: #ff0053;
 }
 .wrapper .instagram-section p {
@@ -450,12 +431,6 @@ background: #002e50;
 {
 
 body {
-	padding-left: 3%;
-	padding-right: 3%
-}
-
-.team_name a {
-	color: #FEE715FF;
 }
 
 .burger {
@@ -472,27 +447,49 @@ body {
 	margin-right: 0%
 }
 
+/* Intro */
+.wrapper .intro {
+	margin-top: -4%;
+	background-color: #002e50;
+}
 
-.special {
-	grid-column: 2;
-	grid-row: 1}
+/* Team */
+.wrapper .team {
+	height: auto;
+}
 
-
-.wrapper > div {
-	background-color: grey;
-	grid-column: span 4;
+.wrapper .team .person {
+	width: 50%;
 }
 
 
-/* PARTNERS */
-.partners {
-	grid-column: span 3;
+
+/* Instagram */
+.wrapper .instagram-section {
+	word-break: keep-all;
 }
 
-.partners_wrap .names {
-	grid-column: 2/4;
-
+.wrapper .instagram-section h2{
+	font-size: 3rem;
+	margin: 0;
 }
+
+.wrapper .instagram-section p {
+	width: 90%;
+}
+
+.wrapper .instagram-section img {
+	display: block;
+	margin: auto;
+	width: 70%;
+}
+
+.wrapper .instagram-section button {
+	display: block;
+	width: 40%;
+	margin: auto;
+}
+
 
 
 }
