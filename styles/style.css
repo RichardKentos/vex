@@ -319,7 +319,7 @@ footer {
 	background-color: #002e50;
 	border-top: 4px solid #ff0053;
 	padding:50px;
-	margin-top: 70vh;
+	margin-top: 30vh;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -333,6 +333,10 @@ footer div {
 
 footer div p {
 	color: white
+}
+
+footer div img {
+	width: 10%;
 }
 
 footer div i {
@@ -467,6 +471,7 @@ body {
 /* Instagram */
 .wrapper .instagram-section {
 	word-break: keep-all;
+	border-radius: 0%;
 }
 
 .wrapper .instagram-section h2{
@@ -481,15 +486,25 @@ body {
 .wrapper .instagram-section img {
 	display: block;
 	margin: auto;
-	width: 70%;
+	width: 100%;
+	margin-bottom: 5%;
 }
 
 .wrapper .instagram-section button {
 	display: block;
-	width: 40%;
+	font-size: 1.7rem;
+	width: fit-content;
 	margin: auto;
 }
 
+
+footer {
+	margin-top: 20vh;
+	}
+
+footer div img {
+	width: 35%;
+}
 
 
 }
