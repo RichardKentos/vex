@@ -1,0 +1,53 @@
+
+/* TEAM */
+.profile-section {
+	height: auto;
+	background-color: #F5EFED;
+	color: black;
+	margin-bottom: 5%;
+	margin-top: 30vh;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+.profile {
+	font-size: 12em;
+	max-width: 30%;
+	height: 100%;
+	float: left;
+}		
+
+.basic-info {
+	width: 70%;
+	height: 100%;
+	font-size: 1.5em;
+	padding: 2% 5%;
+	float: left;
+}
+
+.basic-info .name {
+	font-family: "namefont";
+	color: #ff0053;
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+}
+
+.special-info {
+	font-family: "namefont";
+	color: #002e50;
+	font-size: 1.4em;
+	margin-right: 2%;
+	border-right: 5px solid #ff0053;
+}
+
+/* .profile-text {
+	width: 30%;
+	font: 1.3rem Verdana;
+	line-height: 1.7rem;
+} */
+

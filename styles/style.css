@@ -47,10 +47,32 @@ a {
 	text-decoration: none;
 }
 
+header {
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	top: 0;
+	width: 100%;
+	padding: 40px;
+	height: 120px;
+	transition: .3s;
+	z-index: 10;
+}
+
+header a {
+	width: 150px;
+}
+
+.scrolled-header {
+	background-color: #002e50;
+	color: #ff0053;
+}
+
 .logo {
 	font: 3rem namefont;
-	color: #002e50;
-	padding: 40px;
+	color: white;
 	transition: .2s;
 }
 
@@ -59,16 +81,15 @@ a {
 }
 
 /* MENU */
-.burger {
+/* .burger {
+	align-self: flex-end;
 	font-size: 3em;
-	position: absolute;
-	top: 5%;
-	right: 5%;
-	color: #002e50;
+	color: white;
 }
 
 .burger:hover{
 	cursor: pointer;
+	color: #002e50;
 }
 
 .burger:hover .menu_content {
@@ -143,6 +164,29 @@ menu li:hover{
 menu {
 	position: relative;
 	margin-left: 2%;
+	align-self: flex-end;
+} */
+
+menu {
+	align-self: flex-end;
+	width: 70%;
+}
+
+menu ul li{
+	list-style-type: none;
+	float: left;
+	line-height: 120px;
+	margin-left: 4%;
+	padding-right: 1%;
+	color: white;
+	font: bolder 1.2rem namefont;
+	transition: .2s;
+	letter-spacing: .2rem;
+	border-right: 4px solid #ff0053;
+}
+
+menu ul li:hover {
+	color: #ff0053;
 }
 
 /* WRAPPER */
@@ -202,7 +246,6 @@ menu {
 
 .wrapper .intro-text h2 {
 	outline: 10px solid white;
-
 	color: #002e50;
 	font-family: "Orbitron";
 	font-weight: bolder;
@@ -213,6 +256,8 @@ menu {
 }
 
 
+
+/* Team section */
 .wrapper .team {
 	background-color: #002e50;
 	padding: 2%;
@@ -232,8 +277,12 @@ menu {
 	margin-bottom: 4rem;
 }
 
-.wrapper .team p {
-	width: 50%;
+.wrapper .team .team-people {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .wrapper .team .person {
@@ -242,14 +291,21 @@ menu {
 
 .wrapper .team .person i {
 	font-size: 8rem;
+	margin-bottom: 10%;
 	transition: .3s;
 	cursor:pointer;
 }
 
 .wrapper .team .person i:hover {
 	transform: scale(1.2);
+	color: #ff0053;
 	transform: rotate(10deg);
 }
+
+.wrapper .team .person h3 {
+	font: 1.4rem Verdana;
+}
+
 
 
 
@@ -387,58 +443,6 @@ background: #002e50;
 	z-index: 4;
 	background-color: transparent;
 }
-
-
-
-
-/* TEAM */
-.prof_sec {
-	height: 20em;
-	overflow: hidden;
-	background-color: #F5EFED;
-	color: black; 
-	margin-bottom: 5%;
-	position: relative;
-	z-index: 1
-}
-
-
-.profile {
-	width: 12em;
-	height: auto;
-	position: relative;
-	display: inline-block;
-	margin: 40px;
-}		
-
-
-
-.profile_text {
-	position:absolute;
-	top: 10%;
-	display: inline-block;
-	margin-top: 0;
-	padding-top: 0;
-	font-size: 1.5em;
-}
-
-.profile_text .name {
-	font-family: "namefont";
-	color: #ff0053;
-	font-size: 3rem;
-}
-
-.special-info {
-	font-family: "namefont";
-	color: #002e50;
-	font-size: 1.5em;
-	margin-right: 2%;
-}
-
-
-
-
-
 
 
 @media only screen and (max-width: 600px)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>The Crows</title>
+		<title>VEX Team | Contact</title>
 	
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -19,67 +19,96 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" href="styles/contact-style.css">
 	</head>
 <body>
 
-		<h1>Stay in touch</h1>
-
-		<i class="burger fa fa-bars"></i>
+	<header>
+		<a href="index.html">
+			<h2 class="logo">VEX</h2>
+		</a>
+	
 		<menu>
 			<ul>
-			<div class="menu_content transform_menu">
-				<a href="gallery.html"><li>Best shots</li></a>
-				<a href="contact.html"><li>Contact</li></a>
-				<a href="team.html"><li>Our TEAM</li></a>
-				<a href="partners.html"><li>Thanks to</li></a>
-				<i class="arrow fa fa-angle-right"></i>
-			</div>
+				<a href="gallery.html">
+					<li>Our story</li>
+				</a><a href="team.html">
+					<li>The team</li>
+				</a><a href="partners.html">
+					<li>Thanks to</li>
+				</a><a href="contact.html">
+					<li>Contact us</li>
+				</a>
 			</ul>
 		</menu>
+			<!-- <i class="burger fa fa-bars"></i>
+			<menu>
+				<ul>
+				<div class="menu_content transform_menu">
+					<a href="gallery.html"><li>Best shots</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+					<a href="team.html"><li>Our TEAM</li></a>
+					<a href="partners.html"><li>Thanks to</li></a>
+					<i class="arrow fa fa-angle-right"></i>
+				</div>
+				</ul>
+			</menu> -->
+	</header>
 
+	<div class="wrapper">
 		
-<form name="contactform" method="post" action="mail.php">
+		<form  method="post">
 
-<div class="field">
-	<label for="Name">Name</label>
-	<input placeholder="John Doe" type="text">
-</div>
+			<div class="image">
+				<img src="images/drone.jpg" alt="">
+			</div>
 
+			<div class="contact-info">
+				<div class="field">
+					<label for="name">Name</label>
+					<input placeholder="John Doe" type="name">
+				</div>
+				
+				<div class="field">
+					<label for="email">E-mail</label>
+					<input placeholder="johndoe@gmail.com" type="email">
+				</div>
+				
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea placeholder="I would like to..." type="text"></textarea>
+				</div>
+				
+				<input class="send-btn" value="Send" type="submit">
+			</div>
+		</form>
 
-<div class="field">
-	<label for="E-mail">E-mail</label>
-	<input placeholder="johndoe@gmail.com" type="text">
-</div>
+		<footer>
 
-<div class="field">
-	<label for="Message">Message</label>
-	<textarea placeholder="I would like to..." type="text"></textarea>
-</div>
-
-
-
-
-
-</form>
-
-<footer>
-
-	<div class="adress">
-		<i class="fas fa-map-marker-alt"></i>
-		<p>Škultétyho 10 <br>Košice<br> Slovakia</p>
+			<div class="adress">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Škultétyho 10 <br>Košice<br> Slovakia</p>
+			</div>
+		
+			<div class="mail">
+				<i class="fa fa-envelope"></i>
+				<p>vexteam918c@gmail.com</p>
+			</div>
+		
+			<div class="money">
+				<i class="fas fa-hand-holding-usd"></i>
+				<p>IBAN: 1234 0000 0012 1234</p>
+				<img src="images/qr.png" alt="">
+				<p>Scan it to help this team grow</p>
+			</div>
+		
+		
+		</footer>
 	</div>
 
-	<div class="mail">
-		<i class="fa fa-envelope"></i>
-		<p>vexteam918c@gmail.com</p>
-	</div>
 
-	<div class="money">
-		<i class="fas fa-hand-holding-usd"></i>
-		<p>IBAN: 1234 0000 0012 1234</p>
-	</div>
 
-</footer>
+
 <!-- <i id="back_top" class="fa fa-chevron-circle-up"></i> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

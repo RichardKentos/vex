@@ -1,0 +1,80 @@
+.wrapper {
+    padding: 40vh 0;
+}
+
+form {
+    width: 80%;
+    min-height: 600px;
+    background-color: #002e50;
+}
+
+form .image {
+    float: left;
+    margin: 0;
+    max-width: 55%;
+    position: relative;
+}
+
+form .image img {
+    position: relative;
+    max-width: 100%;
+    float: left;
+}
+
+form .contact-info {
+    max-width: 45%;
+    float: left;
+    padding: 5%;
+    margin: 0;
+}
+
+form .contact-info .field {
+    margin-bottom: 15%;
+}
+
+form .contact-info .field label {
+    width: 100%;
+    font: 2rem namefont;
+    letter-spacing: .2rem;
+    color: #ff0053;
+}
+
+form .contact-info .field input,
+form .contact-info .field textarea {
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 2%;
+    border: none;
+    outline: none;
+ 
+}
+
+form .contact-info .field input:focus,
+form .contact-info .field textarea:focus {
+    outline: 2px solid #ff0053;
+}
+
+form .contact-info .field textarea {
+    width: 100%;
+    height: 200px;
+}
+
+form .contact-info .send-btn {
+    margin: auto;
+    display: block;
+    background-color: #ff0053;
+    color: white;
+    outline: none;
+    border: 3px solid #ff0053;
+    border-radius: 5px;
+    padding: 10px;
+    font: 1.4rem namefont;
+    letter-spacing: .2rem;
+    transition: .2s;
+}
+
+form .contact-info .send-btn:hover {
+    border: 3px solid #ff0053;
+    background-color: #002e50;
+}
