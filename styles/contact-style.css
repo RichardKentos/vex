@@ -92,6 +92,10 @@ form .contact-info .send-btn:hover {
         font: 2.5rem namefont;
     }
 
+    form {
+        width: 95%;
+    }
+
     form .image {
         float: none;
         max-width: 100%;

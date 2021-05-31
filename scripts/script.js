@@ -20,7 +20,7 @@ burger.addEventListener("click", function() {
 // BACK TO THE TOP
 // ---------------------------
 
-var back_top = document.getElementById("back_top");
+// var back_top = document.getElementById("back_top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 // window.onscroll = scrollFunction();
@@ -46,7 +46,6 @@ var back_top = document.getElementById("back_top");
 // Header change after scroll
 
 const changeHeader = (e) => {
-  console.log(window.innerHeight,window.scrollY);
   const header = document.querySelector("header");
 
   if (window.scrollY > 100) {
