@@ -167,7 +167,8 @@ menu {
 	align-self: flex-end;
 } */
 
-.burger {
+.burger,
+.close {
 	display: none;
 }
 
@@ -488,7 +489,7 @@ header menu {
 	width: 80%;
 	height: 100vh;
 	margin-right: -80%;
-	transition: .3s;
+	transition: .2s;
 }
 
 header menu ul {
@@ -497,7 +498,7 @@ header menu ul {
 
 header menu ul li {
 	width: 100%;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin-top: 10%;
 	padding: 0;
 }
@@ -512,6 +513,21 @@ header menu ul li::after {
 	width: 15px;
 	height: 15px;
 	border-radius: 15px;
+}
+
+header menu .close {
+	position: relative;
+	left: 50%;
+	top: 20%;
+	color: white;
+	font-size: 3rem;
+	transition: .2s;
+}
+
+header menu .close:hover {
+	cursor: pointer;
+	color: #ff0053;
+	transform: rotate(90deg);
 }
 
 .menu-shown {

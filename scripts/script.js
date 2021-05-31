@@ -1,5 +1,5 @@
 const burger = document.querySelector(".burger");
-// const arrow = document.querySelector(".arrow");
+const close = document.querySelector(".close");
 const menu = document.querySelector("menu");
 
 burger.addEventListener("click", function() {
@@ -11,9 +11,9 @@ burger.addEventListener("click", function() {
   }
 })
 
-// arrow.addEventListener("click", function() {
-// 	transformMenu.classList.remove("menu_shown");
-// })
+close.addEventListener("click", function() {
+	menu.classList.remove("menu-shown");
+})
 
 
 // ---------------------------

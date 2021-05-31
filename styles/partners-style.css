@@ -37,8 +37,8 @@
 
 .individuals h2 {
     width: 100%;
-    font: 2rem namefont;
-    color: #ff0053;
+    font: 2.5rem namefont;
+    color: black;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -64,5 +64,6 @@
     margin-top: 10%;
     padding: 5%;
 }
+
 
 }
