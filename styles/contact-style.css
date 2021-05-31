@@ -2,6 +2,11 @@
     padding: 40vh 0;
 }
 
+.wrapper h2 {
+    width: 80%;
+    font: 4rem namefont;
+}
+
 form {
     width: 80%;
     min-height: 600px;
@@ -77,4 +82,31 @@ form .contact-info .send-btn {
 form .contact-info .send-btn:hover {
     border: 3px solid #ff0053;
     background-color: #002e50;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper h2 {
+        width: 80%;
+        font: 2.5rem namefont;
+    }
+
+    form .image {
+        float: none;
+        max-width: 100%;
+        position: relative;
+    }
+    
+    form .image img {
+        position: relative;
+        width: 100%;
+    }   
+
+    form .contact-info {
+        float: none;
+        max-width: 100%;
+        padding: 5%;
+        margin: 0;
+    }
 }

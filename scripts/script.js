@@ -1,10 +1,15 @@
-// const menuIcon = document.querySelector(".burger");
+const burger = document.querySelector(".burger");
 // const arrow = document.querySelector(".arrow");
-// const transformMenu = document.querySelector(".transform_menu");
+const menu = document.querySelector("menu");
 
-// menuIcon.addEventListener("click", function() {
-// 	transformMenu.classList.add("menu_shown");
-// })
+burger.addEventListener("click", function() {
+  if (menu.classList.value !== "menu-shown") {
+    menu.classList.add("menu-shown");
+  }
+  else {
+    menu.classList.remove("menu-shown");
+  }
+})
 
 // arrow.addEventListener("click", function() {
 // 	transformMenu.classList.remove("menu_shown");
