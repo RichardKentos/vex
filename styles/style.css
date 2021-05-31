@@ -494,13 +494,15 @@ header menu {
 
 header menu ul {
 	height: 100vh;
+	padding: 10%;
 }
 
 header menu ul li {
 	width: 100%;
-	font-size: 2rem;
+	font-size: 2.4rem;
 	margin-top: 10%;
 	padding: 0;
+	border: none;
 }
 
 header menu ul li::after {
@@ -516,6 +518,7 @@ header menu ul li::after {
 }
 
 header menu .close {
+	display: inline-block;
 	position: relative;
 	left: 50%;
 	top: 20%;
